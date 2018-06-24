@@ -20,7 +20,7 @@ def parse_soup(soup):
     '''
     # check to see if there is an error message
     error_message = soup.select('div[id="notification"]')
-    if len(error_message) == 1 in header:
+    if len(error_message) == 1:
         message = ['Word not found', 'Please try again']
     else:
         message = [syn.getText().replace('\n','') for syn in soup.select('.syn')]
