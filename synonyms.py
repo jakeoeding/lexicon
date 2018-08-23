@@ -4,6 +4,7 @@ import keyboard
 import pyperclip
 import requests
 
+
 def get_html(word):
     """
     INPUT: a string of the word for which you want synonyms
@@ -11,6 +12,7 @@ def get_html(word):
     """
     wp = requests.get(f'http://www.synonym.com/synonyms/{word}')
     return wp.text
+
 
 def parse_soup(soup):
     """
@@ -26,6 +28,7 @@ def parse_soup(soup):
         message = [syn.getText().replace('\n','') for syn in soup.select('.syn')]
     return message
 
+
 def display_synonyms(synonyms, word):
     """
     INPUT: the original word and the list of its synonyms
@@ -33,6 +36,7 @@ def display_synonyms(synonyms, word):
     """
     easygui.choicebox(f'Synonyms of {word.upper()}:', choices=synonyms)
 
+    
 def lookup_synonyms(word):
     """
     INPUT: a string of the word for which you want synonyms
@@ -43,6 +47,7 @@ def lookup_synonyms(word):
     synonyms = parse_soup(soup)
     display_synonyms(synonyms, word)
 
+    
 if __name__ == '__main__':
     while True:
         # halt execution until this key combo is pressed
