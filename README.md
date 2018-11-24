@@ -1,7 +1,7 @@
 # Synonym
 Quick script to look up the definition of a word or its synonyms. Useful when working on things like writing or reading news articles.
 
-##How to use
+## How to use
 Run it in the background via command line:
 `sudo python lexicon.py`
 
