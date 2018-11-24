@@ -1,8 +1,17 @@
 # Synonym
-Quick script to grab synonyms of a given word
+Quick script to look up the definition of a word or its synonyms. Useful when working on things like writing or reading news articles.
 
-Run it in the background via command line while working on other things, such as reading a news article.
+##How to use
+Run it in the background via command line:
+`sudo python lexicon.py`
 
-If you come across a word you don't know, copy it to the clipboard and press ctrl+g+h. 
+When you come across a word you want to look up, copy it to the clipboard:
+<kbd>ctrl</kbd> + <kbd>c</kbd>
 
-This will launch a window with a list of synonyms from the synonym.com page pertaining to the word.
+If you want to get the definition, use the corresponding shortcut:
+<kbd>ctrl</kbd> + <kbd>g</kbd> + <kbd>h</kbd>
+
+If you want to get the synonyms, use the corresponding shortcut:
+<kbd>ctrl</kbd> + <kbd>g</kbd> + <kbd>y</kbd>
+
+This action will launch a window with a list definitions/synonyms from the vocabulary.com/synonym.com page pertaining to the word.
