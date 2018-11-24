@@ -40,8 +40,8 @@ def display_definitions(definitions, word):
 
 def lookup_definitions(word):
     """
-    INPUT: a string of the word for which you want synonyms
-    ACTION: a gui window that displays the synonyms
+    INPUT: a string of the word for which you want definitions
+    ACTION: a gui window that displays the definitions
     """
     html = get_html(word)
     soup = bs4.BeautifulSoup(html, 'html.parser')
